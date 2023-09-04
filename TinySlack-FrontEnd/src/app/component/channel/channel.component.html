@@ -1,0 +1,12 @@
+<h3>{{ canal.channelName }}</h3>
+<p>{{ canal.channelDescription }}</p>
+<p>Créateur: {{ canal.user.userName }}</p>
+<div *ngIf="currentUser.userId == canal.user.userId && canal.locked == 0">
+  <app-change-channel [actualChannel]="canal"></app-change-channel>
+  <button (click)="delete()">Supprimer</button>
+</div>
+<div></div>
+<div *ngFor="let message of messagesFromChannel">
+  <app-message (Rafraichissement)="refresh()" [msg]="message"></app-message>
+</div>
+<app-create-message (Rafraichissement)="refresh()"></app-create-message>
