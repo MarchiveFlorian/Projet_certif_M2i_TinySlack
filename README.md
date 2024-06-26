@@ -58,7 +58,7 @@ Voici comment utiliser notre API :
 1. Clonez le projet
 
 ```bash
-  git clone https://github.com/MarchiveFlorian/Projet_certif_M2i_TinySlack.git
+  git clone https://github.com/MarchiveFlorian/TinySlack.git
 ```
 
 2. Placez vous dans le projet
